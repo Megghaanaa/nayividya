@@ -1,0 +1,116 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    background: url("https://wallpapercave.com/wp/wp5921640.jpg")
+}
+
+.contact-parent{
+    background: linear-gradient(
+        45deg,
+        rgb(77, 31, 87),
+        rgb(114, 114, 126),
+        rgb(62, 17, 68)
+    );
+    display:flex;
+    margin:80px 0;
+    font-weight: bolder;
+    color: #fff;
+}
+
+.contact-child{
+    display:flex;
+    flex:1;
+    box-shadow:0px 0px 10px -2px rgba(0,0,0,0.75);
+}
+
+.child1{
+    background:linear-gradient(rgba(66, 62, 62, 0.377), rgba(66, 61, 61, 0.377)), url("https://images5.alphacoders.com/421/thumb-1920-421124.jpg");
+    background-size:cover;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    color:rgb(248, 244, 244);
+    padding:100px 0;
+}
+
+.child1 p{
+    padding-left:20%;
+    font-size:20px;
+    text-shadow:0px 0px 2px #000;
+}
+
+.child1 p span{
+    font-size:16px;
+    color:#ffd06a;
+}
+
+.child2{
+    flex-direction:column;
+    justify-content:space-around;
+    align-items:center;
+}
+
+.inside-contact{
+    width:90%;
+    margin:0 auto;
+}
+
+.inside-contact h2{
+    text-transform:uppercase;
+    text-align:center;
+    margin-top:50px;
+}
+
+.inside-contact h3{
+    text-align:center;
+    font-size:16px;
+    color:#0085e2;
+}
+
+.inside-contact input, .inside-contact textarea{
+    width:100%;
+    background-color:rgb(250, 220, 253);
+    border:1px solid rgba(0,0,0,0.48);
+    padding:5px 10px;
+    margin-bottom:20px;
+}
+
+.inside-contact input[type=submit]{
+    background-color:rgb(73, 9, 77);
+    color:rgb(210, 164, 236);
+    transition:0.2s;
+    border:2px solid rgb(51, 4, 41);
+    margin:30px 0;
+
+    
+}
+
+.inside-contact input[type=submit]:hover{
+    background-color:rgb(253, 197, 255);
+    color:rgb(70, 17, 83);
+    transition:0.2s;
+   
+}
+
+@media screen and (max-width:991px){
+    .contact-parent{
+        display:block;
+        width:100%;
+    }
+
+    .child1{
+        display:none;
+    }
+
+    .child2{
+        background-image:linear-gradient(rgba(255,255,255,0.377),rgba(255, 255, 255, 0.377)), url("./background\ image.png");
+        background-size: cover;
+    }
+
+    .inside-contact input, .inside-contact textarea{
+        background-color:rgb(34, 31, 31);
+    }
+}
